@@ -2,7 +2,7 @@
 
 > Developer & Creative Technologist
 
-Personal portfolio of **John Emerson Delos Reyes** (alias **Emeer**) — built with Three.js, custom GLSL shaders, and vanilla HTML/CSS/JS. A cosmic interactive particle-galaxy experience that serves as a creative showcase.
+Personal portfolio of **John Emerson Delos Reyes** (alias **Emer**) — built with Three.js, custom GLSL shaders, and vanilla HTML/CSS/JS. A cosmic interactive particle-galaxy experience that serves as a creative showcase.
 
 [![Deploy to GitHub Pages](https://github.com/Ashio245/nya/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ashio245/nya/actions/workflows/deploy.yml)
 
@@ -23,7 +23,7 @@ Personal portfolio of **John Emerson Delos Reyes** (alias **Emeer**) — built w
 
 ## 📸 Preview
 
-![NYA preview](https://via.placeholder.com/800x450/0a0a0f/4fc3f7?text=NYA+%E2%9C%A8+Emeer+Portfolio)
+![NYA preview](https://via.placeholder.com/800x450/0a0a0f/4fc3f7?text=NYA+%E2%9C%A8+Emer+Portfolio)
 
 ---
 

@@ -16,10 +16,11 @@
   --purple:    #b388ff;
   --pink:      #f48fb1;
   --white:     #ffffff;
-  --gray:      #b0bec5;
-  --glass-bg:  rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.10);
+  --gray:      #d0dbe5;
+  --glass-bg:  rgba(8, 8, 14, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.14);
   --nav-h:     64px;
+  --text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 html {
@@ -84,14 +85,15 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 2.5rem;
-  transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  background: rgba(8, 8, 14, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  transition: background 0.4s ease;
 }
 
 nav.scrolled {
-  background: rgba(10, 10, 15, 0.75);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--glass-border);
+  background: rgba(8, 8, 14, 0.95);
 }
 
 .nav-logo {
@@ -115,10 +117,11 @@ nav.scrolled {
   color: var(--gray);
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: color 0.3s ease;
+  text-shadow: var(--text-shadow);
 }
 
 .nav-links a:hover {
@@ -137,6 +140,12 @@ nav.scrolled {
 
 .hero-inner {
   max-width: 700px;
+  background: rgba(8, 8, 14, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 3rem 3.5rem;
+  border: 1px solid var(--glass-border);
 }
 
 .hero-title {
@@ -160,12 +169,13 @@ nav.scrolled {
 .hero-sub {
   margin-top: 1.25rem;
   font-size: clamp(1rem, 2.5vw, 1.3rem);
-  color: var(--gray);
+  color: var(--white);
   letter-spacing: 0.06em;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid var(--purple);
   width: 0;
+  text-shadow: var(--text-shadow);
   animation: typewriter 2s steps(20, end) 0.6s forwards,
              blink 0.8s step-end 0.6s 5;
 }
@@ -187,11 +197,12 @@ nav.scrolled {
   color: var(--white);
   text-decoration: none;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  background: rgba(79, 195, 247, 0.08);
+  background: rgba(79, 195, 247, 0.18);
+  text-shadow: var(--text-shadow);
 }
 
 .hero-cta:hover {
@@ -208,11 +219,12 @@ section:not(#home) {
 .section-label {
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--blue);
   margin-bottom: 0.75rem;
+  text-shadow: var(--text-shadow);
 }
 
 .section-title {
@@ -220,6 +232,7 @@ section:not(#home) {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 700;
   margin-bottom: 1rem;
+  text-shadow: var(--text-shadow);
 }
 
 .section-desc {
@@ -229,6 +242,7 @@ section:not(#home) {
   margin: 0 auto 3.5rem;
   font-size: 1rem;
   line-height: 1.7;
+  text-shadow: var(--text-shadow);
 }
 
 /* ---------- Glass Card Base ---------- */
@@ -236,8 +250,8 @@ section:not(#home) {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   padding: 2rem 2.25rem;
   transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -265,6 +279,7 @@ section:not(#home) {
   color: var(--gray);
   font-size: 1.05rem;
   line-height: 1.8;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .about-card p + p {
@@ -301,12 +316,14 @@ section:not(#home) {
   font-weight: 700;
   margin-bottom: 0.6rem;
   color: var(--white);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .feature-card p {
   color: var(--gray);
   font-size: 0.9rem;
   line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 /* ---------- Contact Section ---------- */
@@ -339,11 +356,12 @@ section:not(#home) {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .form-group input,
 .form-group textarea {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.09);
   border: 1px solid var(--glass-border);
   border-radius: 10px;
   padding: 0.75rem 1rem;
@@ -395,6 +413,8 @@ footer {
   border-top: 1px solid var(--glass-border);
   position: relative;
   z-index: 1;
+  background: rgba(8, 8, 14, 0.85);
+  text-shadow: var(--text-shadow);
 }
 
 footer a {
@@ -477,6 +497,10 @@ footer a:hover {
 
   .nav-links a {
     font-size: 0.8rem;
+  }
+
+  .hero-inner {
+    padding: 2rem 1.5rem;
   }
 
   .features-grid {
