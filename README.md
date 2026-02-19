@@ -4,6 +4,15 @@
 
 Personal portfolio of **John Emerson Delos Reyes** (alias **Emeer**) — built with Three.js, custom GLSL shaders, and vanilla HTML/CSS/JS. A cosmic interactive particle-galaxy experience that serves as a creative showcase.
 
+[![Deploy to GitHub Pages](https://github.com/Ashio245/nya/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ashio245/nya/actions/workflows/deploy.yml)
+
+## 🌐 View Live
+
+**👉 [https://ashio245.github.io/nya/](https://ashio245.github.io/nya/)**
+
+> The site is automatically deployed to GitHub Pages on every push to `main`.
+> If the link isn't live yet, go to **Settings → Pages** in the repository and set the source to **GitHub Actions**.
+
 ---
 
 ## 🔗 Connect
