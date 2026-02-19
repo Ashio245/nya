@@ -10,8 +10,7 @@ Personal portfolio of **John Emerson Delos Reyes** (alias **Emeer**) — built w
 
 **👉 [https://ashio245.github.io/nya/](https://ashio245.github.io/nya/)**
 
-> The site is automatically deployed to GitHub Pages on every push to `main`.
-> If the link isn't live yet, go to **Settings → Pages** in the repository and set the source to **GitHub Actions**.
+> The site is automatically deployed to GitHub Pages on every push.
 
 ---
 
